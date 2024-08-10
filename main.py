@@ -35,7 +35,7 @@ if __name__ == '__main__':
     with open(args.scaler, 'rb') as f:
         scaler = load(f)
 
-    loader = Loader.DataLoader(args.file_path, None, "Survived", embarked_encoder.categories_[0], sex_encoder.classes_, pclass_encoder.categories_[0])
+    loader = Loader.DataLoader(args.file_path, None, args.target_column, embarked_encoder.categories_[0], sex_encoder.classes_, pclass_encoder.categories_[0])
     loader.load_data()
     loader.sanity_check()
 
