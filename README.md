@@ -12,6 +12,7 @@ PCLASS_ENCODER: Encoder used to OneHot the pclass column. It should be stored as
 SEX_ENCODER: Encoder used to binarize the sex column. It should be stored as pickle
 SCALER: To scale the dataset. It should be stored as pickle
 
+```
 Here is the help detailed.
 
 usage: Rappi Challenge [-h] [-fp FILE_PATH] [-tc TARGET_COLUMN] [-m MODEL] [-ee EMBARKED_ENCODER] [-pc PCLASS_ENCODER]
@@ -38,3 +39,4 @@ options:
                         Path to new Sex encoder. Must be a binarizer. By default uses models/sex_encoder.pkl
   -s SCALER, --scaler SCALER
                         Path to new scaler. By default uses models/scaler.pkl
+```
